@@ -399,15 +399,11 @@
 		}
 
 		\parbox[b][150pt][c]{0.35\textwidth}{
-			\textcolor{textcol}{\Huge What's my ROI?}\\
+			\textcolor{textcol}{\huge What's my ROI?}\\
 			\begin{itemize}
-            {\item Based on industry category averages, X # of appointments translates to $Y revenue to your business from your yp advertising campaigns.}
-            {\item This covers your monthly marketing investment with yp, currently at $X across yp Local Ads and ypSearch.}
+            {\item Based on industry category averages, Xnum of appointments translates to Ydol revenue to your business from your yp advertising campaigns.}
+            {\item This covers your monthly marketing investment with yp, currently at Xdol across yp Local Ads and ypSearch.}
             \end{itemize}
-			% LANGUAGES
-			\cvsect{Languages}{0.49}{thirdcol}{textcol}\\[4pt]
-			\icontext{language}{14pt}{\colorbox{maincol}{German (native)}}\\
-			\icontext{language}{14pt}{\colorbox{maincol}{English (c1)}}\\
 		}
 		% PIE CHART	
 %		\begin{}{360}{2}{bgcol}{textcol}{sectcol}
