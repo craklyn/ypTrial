@@ -393,10 +393,10 @@
 			\textcolor{textcol}{The biggest part I contribute to my work is in the area of software development.}\\
 		
 			% LANGUAGES
-			\cvsect{Languages}{0.49}{thirdcol}{textcol}\\[4pt]
-			\icontext{language}{14pt}{\colorbox{maincol}{German (native)}}\\
-			\icontext{language}{14pt}{\colorbox{maincol}{English (c1)}}\\
-		}
+			\cvsect{Your Top 5}{0.49}{thirdcol}{textcol}\\[4pt]
+			\icontext{language}{14pt}{\colorbox{maincol}{High Intent Phrase}}\\
+			\icontext{language}{14pt}{\colorbox{maincol}{Pipe Repair}}\\
+}
 
 		\parbox[b][150pt][c]{0.35\textwidth}{
 			\textcolor{textcol}{\huge What's my ROI?}\\
@@ -405,61 +405,46 @@
             {\item This covers your monthly marketing investment with yp, currently at Xdol across yp Local Ads and ypSearch.}
             \end{itemize}
 		}
-		% PIE CHART	
-%		\begin{}{360}{2}{bgcol}{textcol}{sectcol}
-%			\slice{6}{Design}{thirdcol}
-%			\slice{16}{Consulting}{fourthcol}
-%			\slice{16}{Research}{fifthcol}
-%			\slice{16}{Projects}{secondcol}
-%			\slice{46}{Development}{maincol}
-%		\end{piechart}\\
 	}
-	\begin{center}
-	\begin{tikzpicture}
-		\draw[draw=sectcol,dashed, opacity=0.5] (4,0) -- (-4,0);
-	\end{tikzpicture}
-	\end{center}
 
 	% BAR CHART
-	\mbox{\hspace{-14pt}
-		\begin{barchart}{10}{5.5}{sectcol}{textcol}{sectcol}{maincol}{secondcol}{thirdcol}
-			\baritem{50}{Java}{0}{0}{65}
-			\baritem{80}{Javascript}{100}{0}{0}
-			\baritem{80}{Metor}{0}{0}{70}
-			\baritem{80}{React}{0}{0}{30}
-			\baritem{50}{XPages}{0}{0}{50}
-			\baritem{50}{LaTex}{0}{0}{60}
-		\end{barchart}
-		\hspace{10pt}
+	\mbox{
+%		\hspace{-14pt}
+%		\begin{barchart}{10}{5.5}{sectcol}{textcol}{sectcol}{maincol}{secondcol}{thirdcol}
+%			\baritem{50}{Java}{0}{0}{65}
+%			\baritem{80}{Javascript}{100}{0}{0}
+%			\baritem{80}{Metor}{0}{0}{70}
+%			\baritem{80}{React}{0}{0}{30}
+%			\baritem{50}{XPages}{0}{0}{50}
+%			\baritem{50}{LaTex}{0}{0}{60}
+%		\end{barchart}
+%		\hspace{10pt}
 
 		% TEXTBOX
 		\parbox[b][100pt][c]{0.3\textwidth}{\textcolor{textcol}{Currently, I develop realtime apps with Meteor and react.\\Formerly I worked with Java and XPages.}}
 	}
-	\begin{center}
-	\begin{tikzpicture}
-		\draw[draw=sectcol,dashed, opacity=0.5] (4,0) -- (-4,0);
-	\end{tikzpicture}
-	\end{center}
-	\begin{center}
-	\mbox{
-		\parbox[b][2cm][c]{3cm}{
-			\textcolor{textcol}{I am using git and eclipse regularly for my dev projects.}
-		}\hspace{12pt}
-		\bubbles{5/Eclipse, 6/git, 4/Office, 3/Inkscape, 3/Blender}{\cvsection{Technologies}}		
-	}
-	\end{center}
+
+
 %---------------------------------------------------------------------------------------
 %	ACTIVITIES
 %----------------------------------------------------------------------------------------
-	\cvsect{Actvities}{0.49}{thirdcol}{textcol}\\[20pt]
+	\cvsect{Improvement Areas}{0.49}{thirdcol}{textcol}\\[20pt]
+    \textcolor{textcol}{\LARGE Lost Opportunity Breakout}\\
 	\mbox{
-		
+		% PIE CHART	
+		\begin{piechart}{360}{2}{bgcol}{textcol}{sectcol}
+			\slice{10}{Hold-time\\Abandon}{thirdcol}
+			\slice{20}{Ring-transfer\\Abandon}{fourthcol}
+			\slice{30}{IVR/Voicemail\\Abandon}{fifthcol}
+			\slice{40}{Unanswered}{secondcol} 
+		\end{piechart}\\
+                
 		% FACT BUBBLE
-		\parbox[b][3cm][c]{3cm}{
-			\factbubble{\HUGE{\textcolor{sectcol}{\textbf{6}}}\\\large{\textcolor{sectcol}{\textbf{years}}}}{0.85}{maincol}{sectcol}{thirdcol}\\
-			\textcolor{textcol}{of participation at}\\
-			\textcolor{textcol}{\textbf{Global Game Jam}}
-		}
+%		\parbox[b][3cm][c]{3cm}{
+%			\factbubble{\HUGE{\textcolor{sectcol}{\textbf{\$6}}}\\\large{\textcolor{sectcol}{\textbf{years}}}}{0.85}{maincol}{sectcol}{thirdcol}\\
+%			\textcolor{textcol}{of participation at}\\
+%			\textcolor{textcol}{\textbf{Global Game Jam}}
+%		}
 
 		% TEXT BOX
 		\parbox[b][3cm][c]{4cm}{
