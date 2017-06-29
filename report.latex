@@ -73,7 +73,9 @@
 \usepackage[T1]{fontenc}
 
 % more font size definitions
-\usepackage{moresize}		
+\usepackage{moresize}	
+% more options for doing colored boxed behind text
+\usepackage{xcolor}
 
 %----------------------------------------------------------------------------------------
 %	PAGE LAYOUT  DEFINITIONS
@@ -161,14 +163,14 @@
 \definecolor{maincol}{RGB}{255,150,0}
 
 %secondary colors
-\definecolor{secondcol}{RGB}{0,178,255}
-\definecolor{thirdcol}{RGB}{0,80,130}
-\definecolor{fourthcol}{RGB}{0,100,160}
-\definecolor{fifthcol}{RGB}{0,120,200}
-\definecolor{sixthcol}{RGB}{0,80,130}
+\definecolor{secondcol}{RGB}{255,0,178}
+\definecolor{thirdcol}{RGB}{130,0,80}
+\definecolor{fourthcol}{RGB}{160,0,100}
+\definecolor{fifthcol}{RGB}{200,0,120}
+\definecolor{sixthcol}{RGB}{140,0,60}
 
 %background color
-\definecolor{bgcol}{RGB}{190,220,255}
+\definecolor{bgcol}{RGB}{255,255,180}
 
 %textcolor
 \definecolor{textcol}{RGB}{0,50,80}
@@ -341,7 +343,7 @@
 
 \begin{tabular*}{1\textwidth}{ c c}
 	\parbox[c]{0.25\linewidth}{
-		\colorbox{thirdcol}{\HUGE{\textcolor{white}{\textbf{\uppercase{yp}}} }}\\
+		\center{\colorbox{thirdcol}{\HUGE{\textcolor{white}{\textbf{\uppercase{yp}}} }}}\\
 		\Large{\textcolor{thirdcol}{\textsc{Let your fingers do the walking.}}}\\
 	}&
 	\parbox{0.7\textwidth}{
@@ -363,24 +365,42 @@
 %	FACTS
 %----------------------------------------------------------------------------------------
 
-	\mbox{
-		\parbox[c][3cm][c]{0.29\textwidth}{
-		\textcolor{textcol}{I am a digital media graduate with working experience in research projects as well as in the private sector.}
+	\center{\mbox{
+    	\parbox[c][2cm][c]{0.2\textwidth}{
+		\center{\textcolor{textcol}{\huge 35 \\ \small High Value \\ Calls}}
 		}
-		\hspace{10pt}
-		\parbox[c][3cm][c]{0.32\textwidth}{
-			\begin{center}
-			\factbubble{\huge{\textcolor{sectcol}{\textbf{M.Sc.}}}\\\small{\textcolor{sectcol}{\textbf{Digital Media}}}}{1}{maincol}{sectcol}{thirdcol}\\
-			\textcolor{textcol}{as latest degree from}\\
-			\textcolor{textcol}{\textbf{University of Bremen}}
-			\end{center}
+		\hspace{.01\textwidth}
+		\parbox[c][2cm][c]{0.2\textwidth}{
+		\center{\textcolor{textcol}{\huge 10 \\ \small Appointments}}
 		}
-		\hspace{10pt}
-		\parbox[c][3cm][c]{0.29\textwidth}{
-		\textcolor{textcol}{And I am looking for exciting interdisciplinary projects worldwide.}
+		\hspace{.01\textwidth}
+		\parbox[c][2cm][c]{0.2\textwidth}{
+		\center{\textcolor{textcol}{\huge 15 \\ \small Price \\ Quotes}}
 		}
-	}
-	\vspace{34pt}
+		\hspace{.01\textwidth}
+		\parbox[c][2cm][c]{0.2\textwidth}{
+		\center{\textcolor{textcol}{\huge 10 \\ \small Relevant \\ Inquiries}}
+		}
+	}}
+    \vspace{1cm}
+    	\center{\mbox{
+    	\parbox[c][2cm][c]{0.2\textwidth}{
+		\center{\textcolor{textcol}{\huge 20 \\ \small Missed \\ Opportunities}}
+		}
+		\hspace{.01\textwidth}
+		\parbox[c][2cm][c]{0.2\textwidth}{
+		\center{\textcolor{textcol}{\huge 10 \\ \small Coaching \\ Opportunities}}
+		}
+		\hspace{.01\textwidth}
+		\parbox[c][2cm][c]{0.2\textwidth}{
+		\center{\textcolor{textcol}{\huge 7 \\ \small Unanswered \\ Calls}}
+		}
+		\hspace{.01\textwidth}
+		\parbox[c][2cm][c]{0.2\textwidth}{
+		\center{\textcolor{textcol}{\huge 3 \\ \small Voicemail \\ Abandons}}
+		}
+	}} 
+    \vspace{34pt}
 
 %----------------------------------------------------------------------------------------
 %	High value call highlights
@@ -388,23 +408,36 @@
 
 	\cvsect{High Value Calls Highlights}{0.49}{thirdcol}{textcol}\\[4pt]
 	\mbox{		
-		% TEXT BOX
-		\parbox[b][150pt][c]{0.65\textwidth}{
-			\textcolor{textcol}{The biggest part I contribute to my work is in the area of software development.}\\
-		
-			% LANGUAGES
-			\cvsect{Your Top 5}{0.49}{thirdcol}{textcol}\\[4pt]
-			\icontext{language}{14pt}{\colorbox{maincol}{High Intent Phrase}}\\
-			\icontext{language}{14pt}{\colorbox{maincol}{Pipe Repair}}\\
-}
+		% TEXTBOX
+		\parbox[b][150pt][c]{0.65\textwidth}{\textcolor{textcol}{
+        	\begin{center}
+	      		{\Large Your Top 5}
+          		\newline
+          		\begin{tabular}{ |c|c| } 
+          		\hline
+          		High Intent Phrase & Appear in \% of High Value Calls \\
+          		\hline
+                “Pipe Repair” & 15\% \\ 
+                “Appointment” & 10\% \\ 
+                "Water Leak Repair” & 5\% \\ 
+                “Fix Toilet” & 5\% \\ 
+                “Emergency” & 5\% \\ 
+                \hline
+                \end{tabular}
+                \end{center}
+    	}}
 
-		\parbox[b][150pt][c]{0.35\textwidth}{
-			\textcolor{textcol}{\huge What's my ROI?}\\
-			\begin{itemize}
-            {\item Based on industry category averages, Xnum of appointments translates to Ydol revenue to your business from your yp advertising campaigns.}
-            {\item This covers your monthly marketing investment with yp, currently at Xdol across yp Local Ads and ypSearch.}
-            \end{itemize}
-		}
+
+        \colorbox{blue!30}{
+          \parbox[b][150pt][c]{0.35\textwidth}
+              {
+              \textcolor{textcol}{\huge What's my ROI?}\\
+              \begin{itemize}
+              {\item Based on industry category averages, X appointments translates to \$Y revenue to your business from your YP advertising campaigns.}
+              {\item This covers your monthly marketing investment with YP, currently at \$Z across YP Local Ads and ypSearch.}
+              \end{itemize}
+			}
+        }
 	}
 
 	% BAR CHART
@@ -419,9 +452,6 @@
 %			\baritem{50}{LaTex}{0}{0}{60}
 %		\end{barchart}
 %		\hspace{10pt}
-
-		% TEXTBOX
-		\parbox[b][100pt][c]{0.3\textwidth}{\textcolor{textcol}{Currently, I develop realtime apps with Meteor and react.\\Formerly I worked with Java and XPages.}}
 	}
 
 
@@ -432,12 +462,29 @@
     \textcolor{textcol}{\LARGE Lost Opportunity Breakout}\\
 	\mbox{
 		% PIE CHART	
-		\begin{piechart}{360}{2}{bgcol}{textcol}{sectcol}
-			\slice{10}{Hold-time\\Abandon}{thirdcol}
-			\slice{20}{Ring-transfer\\Abandon}{fourthcol}
-			\slice{30}{IVR/Voicemail\\Abandon}{fifthcol}
-			\slice{40}{Unanswered}{secondcol} 
+        \parbox[b][8cm][c]{12cm}{
+		\begin{piechart}{360}{1.5}{bgcol}{textcol}{sectcol}
+			\slice{10}{\small Hold-time\\Abandon}{thirdcol}
+			\slice{20}{\small Ring-transfer\\Abandon}{fourthcol}
+			\slice{30}{\small IVR/Voicemail\\Abandon}{fifthcol}
+			\slice{40}{\small Unanswered}{secondcol} 
 		\end{piechart}\\
+        \newline
+        
+        \begin{center}
+	      {\Large Negative outcome Phrases}
+          \newline
+          \begin{tabular}{ |c|c| } 
+          \hline
+          Phrase & Frequency \\
+          \hline
+          "I don't have" & 14 \\ 
+          "We don't have" & 5 \\ 
+          "I can't" & 2 \\ 
+          \hline
+          \end{tabular}
+          \end{center}
+        }
                 
 		% FACT BUBBLE
 %		\parbox[b][3cm][c]{3cm}{
@@ -445,14 +492,30 @@
 %			\textcolor{textcol}{of participation at}\\
 %			\textcolor{textcol}{\textbf{Global Game Jam}}
 %		}
-
-		% TEXT BOX
-		\parbox[b][3cm][c]{4cm}{
-			\textcolor{textcol}{In my freetime I do practice many creative hobbies. Due to Muay Thai training I can keep my body and mind in balance.}
+        \parbox[b][8cm][c]{7cm}{
+          \colorbox{red!30}{
+            \parbox[b][3cm][c]{7cm}{
+                \textcolor{textcol}{\large Unanswered Calls Opportunities}\\
+                {With a conversion rate of X\%, and an average industry value of Y, answering just 5 of your 20 unanswered calls could result in an additional \$Z in revenue.}
+              }
+         }
+         \newline
+         \parbox[b][5cm][c]{7cm} {
+         }
+          % TEXT BOX
+          \colorbox{red!30}{
+            \parbox[b][4cm][c]{7cm}{
+                \textcolor{textcol}{\large Negative Outcome Checklist}\\
+                \begin{itemize}
+                {\item Are there services or KWs that should be removed from your campaign?}
+                {\item Are there areas you don't service that should be removed?}
+                {\item Is your staff fully trained on best call handling practices?}
+                \end{itemize}
+            }
+          }
 		}
-
 		% SQUARE BARS
-		\squares{20/Game Dev,40/Martial Arts,10/News,20/Music}{1}
+		%\squares{20/Game Dev,40/Martial Arts,10/News,20/Music}{1}
 	}
 \end{minipage}
 %============================================================================%
