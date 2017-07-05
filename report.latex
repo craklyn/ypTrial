@@ -366,39 +366,39 @@
 %----------------------------------------------------------------------------------------
 
 	\center{\mbox{
-    	\parbox[c][2cm][c]{0.2\textwidth}{
+        \colorbox{green!50}{\parbox[c][2cm][c]{0.2\textwidth}{
 		\center{\textcolor{textcol}{\huge 35 \\ \small High Value \\ Calls}}
-		}
+        }}
 		\hspace{.01\textwidth}
-		\parbox[c][2cm][c]{0.2\textwidth}{
+		\colorbox{green!30}{\parbox[c][2cm][c]{0.2\textwidth}{
 		\center{\textcolor{textcol}{\huge 10 \\ \small Appointments}}
-		}
+		}}
 		\hspace{.01\textwidth}
-		\parbox[c][2cm][c]{0.2\textwidth}{
+		\colorbox{green!30}{\parbox[c][2cm][c]{0.2\textwidth}{
 		\center{\textcolor{textcol}{\huge 15 \\ \small Price \\ Quotes}}
-		}
+		}}
 		\hspace{.01\textwidth}
-		\parbox[c][2cm][c]{0.2\textwidth}{
+		\colorbox{green!30}{\parbox[c][2cm][c]{0.2\textwidth}{
 		\center{\textcolor{textcol}{\huge 10 \\ \small Relevant \\ Inquiries}}
-		}
+		}}
 	}}
     \vspace{1cm}
     	\center{\mbox{
-    	\parbox[c][2cm][c]{0.2\textwidth}{
+    	\colorbox{red!40}{\parbox[c][2cm][c]{0.2\textwidth}{
 		\center{\textcolor{textcol}{\huge 20 \\ \small Missed \\ Opportunities}}
-		}
+		}}
 		\hspace{.01\textwidth}
-		\parbox[c][2cm][c]{0.2\textwidth}{
-		\center{\textcolor{textcol}{\huge 10 \\ \small Coaching \\ Opportunities}}
-		}
-		\hspace{.01\textwidth}
-		\parbox[c][2cm][c]{0.2\textwidth}{
+		\colorbox{red!20}{\parbox[c][2cm][c]{0.2\textwidth}{
 		\center{\textcolor{textcol}{\huge 7 \\ \small Unanswered \\ Calls}}
-		}
+		}}
 		\hspace{.01\textwidth}
-		\parbox[c][2cm][c]{0.2\textwidth}{
+		\colorbox{red!20}{\parbox[c][2cm][c]{0.2\textwidth}{
 		\center{\textcolor{textcol}{\huge 3 \\ \small Voicemail \\ Abandons}}
-		}
+		}}
+        \hspace{.01\textwidth}
+		\colorbox{red!20}{\parbox[c][2cm][c]{0.2\textwidth}{
+		\center{\textcolor{textcol}{\huge 10 \\ \small Coaching \\ Opportunities}}
+		}}
 	}} 
     \vspace{34pt}
 
@@ -494,7 +494,7 @@
 %		}
         \parbox[b][8cm][c]{7cm}{
           \colorbox{red!30}{
-            \parbox[b][3cm][c]{7cm}{
+            \parbox[b][2.5cm][c]{7cm}{
                 \textcolor{textcol}{\large Unanswered Calls Opportunities}\\
                 {With a conversion rate of X\%, and an average industry value of Y, answering just 5 of your 20 unanswered calls could result in an additional \$Z in revenue.}
               }
